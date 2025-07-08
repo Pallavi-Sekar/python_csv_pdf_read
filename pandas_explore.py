@@ -32,7 +32,7 @@ print("keys", df.keys())
 
 print("head", df.head())
 
-with pdfplumber.open("./Pallavi-CV-RBC.pdf") as pdf:
+with pdfplumber.open("./A4.pdf") as pdf:
     for page in pdf.pages:
         print("page_number", page.page_number)
         print("page_text", page.extract_text())
